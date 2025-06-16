@@ -1,4 +1,3 @@
-<?php include '../data.php'; ?>
 <div class="container">
 	<div class="row">	
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -10,31 +9,28 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+          <a class="nav-link active" aria-current="page" href="./index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="loop.php">Loop</a>
+          <a class="nav-link" href="pages/loop.php">Loop</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="login.php">Login</a>
+          <a class="nav-link" href="pages/login.php">Login</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Register.php">Register</a>
+          <a class="nav-link" href="pages/register.php">Register</a>
         </li>
-        <li class="nav-item dropdown">
+        <!-- <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Dropdown
           </a>
-          <ul class="dropdown-menu">
+         <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Action</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
+        </li> -->
       </ul>
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
