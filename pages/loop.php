@@ -14,16 +14,17 @@ include "../data.php";
 
 <?php include "./menu.php"; ?>
 
-<div class="container mt-5">
+<div class="container mt-5">  
   <h2 class="mb-4 text-center">🎥 Movie Gallery</h2>
   <div class="row g-4">
     <?php foreach ($movies as $movie): ?>
       <div class="col-sm-6 col-md-4">
         <div class="card h-100 shadow-sm">
-          <img src="<?= $movie['poster'] ?>" class="card-img-top" alt="<?= $movie['title'] ?>">
+          <img src="<?= $movie['image'] ?>" class="card-img-top" alt="<?= $movie['title'] ?>">
           <div class="card-body d-flex flex-column">
             <h5 class="card-title"><?= $movie['title'] ?></h5>
-            <p class="card-text text-muted">Released: <?= $movie['year'] ?></p>
+            <p class="fw-bold card-text text-muted">Released: <?= $movie['year'] ?></p>
+            <p><span class="fw-bold">Description</span>: <?= $movie['description'] ?></p>
             <a href="#" class="btn btn-outline-primary mt-auto">View More</a>
           </div>
         </div>

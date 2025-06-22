@@ -8,23 +8,23 @@
 </head>
 <body class="bg-light d-flex align-items-center" style="min-height: 100vh;">
 
-<div class="container">
+<div class="container"> 
   <div class="row justify-content-center">
     <div class="col-md-6 col-lg-5">
       <div class="card shadow-sm border-0">
         <div class="card-body">
           <h3 class="card-title text-center mb-4">🔐 Login</h3>
-          <form>
+          <form method="POST" action="actions.php">
             <div class="mb-3">
               <label for="email" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com" name="email" required>
             </div>
             <div class="mb-3">
               <label for="password" class="form-label">Password</label>
-              <input type="password" class="form-control" id="password" placeholder="Enter password" required>
+              <input type="password" class="form-control" id="password" placeholder="Enter password" name="password" required>
             </div>
             <div class="d-grid">
-              <button type="submit" class="btn btn-primary">Login</button>
+              <button type="submit" class="btn btn-primary" name="login">Login</button>
             </div>
           </form>
           <p class="text-center mt-3 mb-0">

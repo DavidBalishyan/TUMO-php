@@ -33,19 +33,25 @@
 	<h1 style="margin-top: 30px">About movies</h1>
 <!--Accordion-->
 <div class="accordion" id="accordionExample">
+  <?php foreach ($data3 as $key => $data): ?>
   <div class="accordion-item">
     <h2 class="accordion-header">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        The Shawshank Redemption (1994)
+      <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#<?= $data["a"]?>" aria-expanded="false" aria-controls="<?= $data["a"]?>">
+        <?= $data["title"]?> (<?= $data["year"] ?>)
       </button>
     </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+    <?php $isShowed = $key === 0 ? "show" : ""?>
+    <div id="<?= $data["a"]?>" class="accordion-collapse collapse <?= $isShowed ?>" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-       This drama, based on a Stephen King novella, tells the story of Andy Dufresne, a man wrongly imprisoned for murder. Through hope, friendship, and resilience, Andy’s journey inside Shawshank Prison captivates viewers with its powerful message about freedom and the human spirit. The film’s brilliant performances and memorable storytelling have earned it a place as one of the greatest movies ever made.
+       <?= $data["description"] ?>
+       <br>
+       Rating: <?= $data["rating"] ?>
       </div>
     </div>
   </div>
-  <div class="accordion-item">
+<?php endforeach ?>
+
+<!--   <div class="accordion-item">
     <h2 class="accordion-header">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
        The Godfather (1972)
@@ -68,7 +74,7 @@
         A mind-bending sci-fi thriller directed by Christopher Nolan, Inception explores the world of dreams within dreams. With stunning visuals and a complex plot, it challenges viewers to question reality and perception. The film’s originality, combined with a stellar cast, makes it a must-watch for fans of thought-provoking storytelling.	
       </div>
     </div>
-  </div>
+  </div> -->
 </div>
 
 
