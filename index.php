@@ -51,31 +51,13 @@
   </div>
 <?php endforeach ?>
 
-<!--   <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-       The Godfather (1972)
-      </button>
-    </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-       Francis Ford Coppola’s masterpiece dives into the world of the Italian-American mafia, exploring themes of family, power, and loyalty. With unforgettable characters like Vito and Michael Corleone, the film is a gripping saga of crime and consequence. Its influence on cinema is monumental, shaping the gangster genre for decades.
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-       Inception (2010)
-      </button>
-    </h2>
-    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        A mind-bending sci-fi thriller directed by Christopher Nolan, Inception explores the world of dreams within dreams. With stunning visuals and a complex plot, it challenges viewers to question reality and perception. The film’s originality, combined with a stellar cast, makes it a must-watch for fans of thought-provoking storytelling.	
-      </div>
-    </div>
-  </div> -->
+<div class="spinner-border" id="spinner" role="status">
+  <span class="visually-hidden">Loading...</span>
 </div>
+
+</div>  
+
+<script src="./handelers/handleLoading.js"></script>
 
 
 <?php include "./components/footer.php"; ?>
